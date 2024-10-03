@@ -155,7 +155,7 @@ esti.null <- function(y,x,v=NULL, nfact, dta=NULL, subset=NULL){
 
 
 # estimation function
-estbeta <- function(X,Y,X_demo = X_demo,B = 100,rate = 0.9){
+estbeta <- function(X,Y,X_demo = X_demo,B = 1000,rate = 0.9){
   # Y_FA <- get("Y_FA", envir = .GlobalEnv)
   # X_demo <- get(demo, envir = .GlobalEnv)
   Y_res = apply(Y,2,function(y){
